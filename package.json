@@ -1,0 +1,16 @@
+{
+  "name": "close-token-accounts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "burn": "tsc && node --env-file .env src/burn.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/spl-token": "^0.4.8",
+    "@solana/web3.js": "^1.95.0",
+    "bs58": "^6.0.0"
+  }
+}
