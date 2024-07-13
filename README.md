@@ -26,3 +26,6 @@ If the program doesn't respond in 60 seconds, your transaction failed. Restart t
 
 
 Restart the program to keep closing token accounts for massive SOL gains.
+
+
+*Note: Blacklist token addresses you don't want closed in `burn.ts`
