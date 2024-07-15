@@ -17,7 +17,7 @@ RPC_URL=... #your rpc url to use
 WALLET=[...] #wallet whose token accounts to close, *uint8 bytes array format*
 ```
 Then execute
-`npm run start`
+`npm run burn`
 
 The program will respond with `14 token accounts successfully closed` if the transaction succeeded.
 
