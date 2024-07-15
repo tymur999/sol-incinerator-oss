@@ -1,4 +1,4 @@
-import {Config} from "./config";
+import {Config} from "../config";
 import {ComputeBudgetProgram, TransactionMessage, VersionedTransaction} from "@solana/web3.js";
 import {createCloseAccountInstruction, TOKEN_PROGRAM_ID} from "@solana/spl-token";
 import bs58 from "bs58";
