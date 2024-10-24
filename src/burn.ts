@@ -19,7 +19,7 @@ const blacklist = [
     ];
 
     const block = await Config.connection.getLatestBlockhash({commitment: "processed"});
-    for(const ata of atas.value.slice(0, 15)) {
+    for(const ata of atas.value) {
         const data = (<TokenAccountData> ata.account.data.parsed).info;
         if(blacklist.includes(data.mint)) continue;
         if(data.tokenAmount.amount != "0") {
@@ -35,6 +35,7 @@ const blacklist = [
               Config.solWallet.publicKey
             )
         );
+        if(inst.length >= 15) break;
     }
 
     const txn = new VersionedTransaction(new TransactionMessage({
